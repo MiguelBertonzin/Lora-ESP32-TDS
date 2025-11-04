@@ -1,9 +1,17 @@
-# Basic Example   
-Simple send or receive.   
+# Emissor e Receptor 
+Medidor de TDS Sensor de Condutividade da Água Analógico.
+Módulo LoRa 915Mhz XL1276/ SX1276.
+ESP32
 
-# Configuration   
-![config-top](https://user-images.githubusercontent.com/6020549/152315401-0a3ea44f-d045-4b93-b988-b9ce9451f935.jpg)
-
-You can select sender or receiver.   
-![config-basic-0](https://github.com/user-attachments/assets/c8bb0ee5-1809-4f06-9f88-418a7f14d84f)
-
+idf.py set-target ESP32
+idf.py menuconfig
+Lora configuration -> freq to use (915Mhz) -> Enable Advanced settings -> pinagem
+SCLK  5
+MOSI  27
+MISO  19
+NSS       18
+RST       14
+DIO0      26
+DIO1      35
+Necessário realizar a troca do modo emissor ou receptor no menuconfig.
+idf.py flash
