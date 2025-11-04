@@ -1,0 +1,130 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 27 2025 15:09:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2702ch (159788) map[0m
+[0;32mI (159) esp_image: segment 1: paddr=00037054 vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (165) esp_image: segment 2: paddr=0003b0a8 vaddr=40080000 size=04f70h ( 20336) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a24dch (664796) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e2504 vaddr=40084f70 size=13acch ( 80588) load[0m
+[0;32mI (446) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (446) boot: Disabling RNG early entropy source...[0m
+[0;32mI (458) cpu_start: Multicore app[0m
+[0;32mI (466) cpu_start: Pro cpu start user code[0m
+[0;32mI (466) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (466) app_init: Application information:[0m
+[0;32mI (469) app_init: Project name:     lora[0m
+[0;32mI (474) app_init: App version:      eb3e4bf-dirty[0m
+[0;32mI (479) app_init: Compile time:     Oct 27 2025 17:54:04[0m
+[0;32mI (485) app_init: ELF file SHA256:  2c610ac70...[0m
+[0;32mI (490) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (495) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (500) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (505) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (510) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (517) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFB88B8 len 00027748 (157 KiB): DRAM[0m
+[0;32mI (529) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 40098A3C len 000075C4 (29 KiB): IRAM[0m
+[0;32mI (550) spi_flash: detected chip: generic[0m
+[0;32mI (553) spi_flash: flash io: dio[0m
+[0;33mW (557) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (570) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (579) main_task: Started on CPU0[0m
+[0;32mI (589) main_task: Calling app_main()[0m
+[0;32mI (619) wifi:wifi driver task: 3ffc08f0, prio:23, stack:6656, core=0[0m
+[0;32mI (629) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (629) wifi:wifi certification version: v7.0[0m
+[0;32mI (629) wifi:config NVS flash: enabled[0m
+[0;32mI (629) wifi:config nano formating: disabled[0m
+[0;32mI (629) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (639) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (639) wifi:Init management short buffer num: 32[0m
+[0;32mI (649) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (649) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (659) wifi:Init static rx buffer num: 10[0m
+[0;32mI (659) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (659) wifi_init: rx ba win: 6[0m
+[0;32mI (669) wifi_init: accept mbox: 6[0m
+[0;32mI (669) wifi_init: tcpip mbox: 32[0m
+[0;32mI (679) wifi_init: udp mbox: 6[0m
+[0;32mI (679) wifi_init: tcp mbox: 6[0m
+[0;32mI (679) wifi_init: tcp tx win: 5760[0m
+[0;32mI (689) wifi_init: tcp rx win: 5760[0m
+[0;32mI (689) wifi_init: tcp mss: 1440[0m
+[0;32mI (699) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (699) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (709) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (709) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (799) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (839) wifi:mode : sta (1c:69:20:31:5e:e8)[0m
+[0;32mI (839) wifi:enable tsf[0m
+[0;32mI (839) LORA_TDS: Conectando ao Wi-Fi: AndroidAPf964...[0m
+[0;32mI (849) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (859) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (979) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1059) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1089) wifi:connected with AndroidAPf964, aid = 4, channel 6, BW20, bssid = 62:f1:a4:d9:8f:3a[0m
+[0;32mI (1089) wifi:security: WPA2-PSK, phy: bgn, rssi: -57[0m
+[0;32mI (1089) wifi:pm start, type: 0[0m
+
+[0;32mI (1089) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1119) wifi:<ba-add>idx:0 (ifx:0, 62:f1:a4:d9:8f:3a), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1159) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1159) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2099) esp_netif_handlers: sta ip: 10.82.238.28, mask: 255.255.255.0, gw: 10.82.238.107[0m
+[0;32mI (2099) LORA_TDS: Wi-Fi conectado! IP: 10.82.238.28[0m
+[0;32mI (2099) LORA_TDS: ✅ Conectado ao Wi-Fi e IP obtido![0m
+[0;32mI (2109) LORA_TDS: Inicializando LoRa...[0m
+[0;32mI (2109) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2119) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2139) TX: Modo EMISSOR iniciado[0m
+[0;32mI (2139) LORA_TDS: TDS=79.6 ppm (159.2 uS/cm, 0.20 V)[0m
+[0;32mI (2139) main_task: Returned from app_main()[0m
+[0;32mI (2199) TX: Enviado via LoRa: 79.6 ppm[0m
+[0;32mI (2609) LORA_TDS: ThingSpeak OK (HTTP 200): 79.6%20ppm[0m
+[0;32mI (12609) LORA_TDS: TDS=58.5 ppm (117.0 uS/cm, 0.14 V)[0m
+[0;32mI (12669) TX: Enviado via LoRa: 58.5 ppm[0m
+[0;32mI (13049) LORA_TDS: ThingSpeak OK (HTTP 200): 58.5%20ppm[0m
+[0;32mI (23049) LORA_TDS: TDS=58.5 ppm (117.0 uS/cm, 0.14 V)[0m
+[0;32mI (23109) TX: Enviado via LoRa: 58.5 ppm[0m
+[0;32mI (23529) LORA_TDS: ThingSpeak OK (HTTP 200): 58.5%20ppm[0m
+[0;32mI (33539) LORA_TDS: TDS=58.5 ppm (117.0 uS/cm, 0.14 V)[0m
+[0;32mI (33599) TX: Enviado via LoRa: 58.5 ppm[0m
+[0;32mI (33969) LORA_TDS: ThingSpeak OK (HTTP 200): 58.5%20ppm[0m
+[0;32mI (43979) LORA_TDS: TDS=58.5 ppm (117.0 uS/cm, 0.14 V)[0m
+[0;32mI (44039) TX: Enviado via LoRa: 58.5 ppm[0m
+[0;32mI (44419) LORA_TDS: ThingSpeak OK (HTTP 200): 58.5%20ppm[0m
+[0;32mI (54419) LORA_TDS: TDS=58.5 ppm (117.0 uS/cm, 0.14 V)[0m
+[0;32mI (54479) TX: Enviado via LoRa: 58.5 ppm[0m
+[0;32mI (54829) LORA_TDS: ThingSpeak OK (HTTP 200): 58.5%20ppm[0m
+[0;32mI (64829) LORA_TDS: TDS=58.5 ppm (117.0 uS/cm, 0.14 V)[0m
+[0;32mI (64889) TX: Enviado via LoRa: 58.5 ppm[0m
+[0;32mI (65269) LORA_TDS: ThingSpeak OK (HTTP 200): 58.5%20ppm[0m
+[0;32mI (75279) LORA_TDS: TDS=58.5 ppm (117.0 uS/cm, 0.14 V)[0m
+[0;32mI (75339) TX: Enviado via LoRa: 58.5 ppm[0m
+[0;32mI (75669) LORA_TDS: ThingSpeak OK (HTTP 200): 58.5%20ppm[0m

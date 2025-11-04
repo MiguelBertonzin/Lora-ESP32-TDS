@@ -1,0 +1,301 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 27 2025 15:09:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=264f4h (156916) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=0003651c vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a570 vaddr=40080000 size=05aa8h ( 23208) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9fe88h (654984) map[0m
+[0;32mI (398) esp_image: segment 4: paddr=000dfeb0 vaddr=40085aa8 size=12f94h ( 77716) load[0m
+[0;32mI (441) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (442) boot: Disabling RNG early entropy source...[0m
+[0;32mI (453) cpu_start: Multicore app[0m
+[0;32mI (462) cpu_start: Pro cpu start user code[0m
+[0;32mI (462) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (462) app_init: Application information:[0m
+[0;32mI (465) app_init: Project name:     lora[0m
+[0;32mI (469) app_init: App version:      eb3e4bf-dirty[0m
+[0;32mI (475) app_init: Compile time:     Oct 27 2025 17:54:04[0m
+[0;32mI (481) app_init: ELF file SHA256:  063f116ab...[0m
+[0;32mI (486) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (491) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (496) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (501) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (506) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (513) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (519) heap_init: At 3FFB88A8 len 00027758 (157 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 40098A3C len 000075C4 (29 KiB): IRAM[0m
+[0;32mI (546) spi_flash: detected chip: generic[0m
+[0;32mI (549) spi_flash: flash io: dio[0m
+[0;33mW (552) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (607) wifi:wifi driver task: 3ffc08b8, prio:23, stack:6656, core=0[0m
+[0;32mI (617) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (617) wifi:wifi certification version: v7.0[0m
+[0;32mI (617) wifi:config NVS flash: enabled[0m
+[0;32mI (617) wifi:config nano formating: disabled[0m
+[0;32mI (617) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (627) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (627) wifi:Init management short buffer num: 32[0m
+[0;32mI (637) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (637) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (647) wifi:Init static rx buffer num: 10[0m
+[0;32mI (647) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (647) wifi_init: rx ba win: 6[0m
+[0;32mI (657) wifi_init: accept mbox: 6[0m
+[0;32mI (657) wifi_init: tcpip mbox: 32[0m
+[0;32mI (657) wifi_init: udp mbox: 6[0m
+[0;32mI (667) wifi_init: tcp mbox: 6[0m
+[0;32mI (667) wifi_init: tcp tx win: 5760[0m
+[0;32mI (677) wifi_init: tcp rx win: 5760[0m
+[0;32mI (677) wifi_init: tcp mss: 1440[0m
+[0;32mI (677) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (687) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (697) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (777) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (807) wifi:mode : sta (1c:69:20:31:5e:e8)[0m
+[0;32mI (807) wifi:enable tsf[0m
+[0;32mI (807) LORA_THINGSPEAK: Conectando ao Wi-Fi: AndroidAPf964...[0m
+[0;32mI (807) LORA_THINGSPEAK: Inicializando LoRa...[0m
+[0;32mI (807) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (817) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (837) TX: Modo EMISSOR iniciado[0m
+[0;32mI (837) main_task: Returned from app_main()[0m
+[0;32mI (897) TX: 21 bytes enviados via LoRa: Hello Miguel! Tick=27[0m
+[0;32mI (897) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (897) wifi:state: init -> auth (0xb0)[0m
+[0;31mE (907) esp-tls: couldn't get hostname for :api.thingspeak.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (907) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (917) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (927) LORA_THINGSPEAK: Erro ao enviar para ThingSpeak: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (1907) wifi:state: auth -> init (0x200)[0m
+[0;32mI (1917) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5987) TX: 22 bytes enviados via LoRa: Hello Miguel! Tick=536[0m
+[0;33mW (5987) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5987) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (11067) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=1042[0m
+[0;33mW (11067) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (11067) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (16147) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=1550[0m
+[0;33mW (16147) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (16147) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (21227) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=2058[0m
+[0;33mW (21227) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (21227) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (26307) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=2566[0m
+[0;33mW (26307) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (26307) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (31387) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=3074[0m
+[0;33mW (31387) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (31387) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (36467) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=3582[0m
+[0;33mW (36467) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (36467) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (41547) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=4090[0m
+[0;33mW (41547) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (41547) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (46627) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=4598[0m
+[0;33mW (46627) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (46627) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (51707) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=5106[0m
+[0;33mW (51707) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (51707) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (56787) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=5614[0m
+[0;33mW (56787) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (56787) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (61867) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=6122[0m
+[0;33mW (61867) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (61867) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (66947) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=6630[0m
+[0;33mW (66947) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (66947) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (72027) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=7138[0m
+[0;33mW (72027) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (72027) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (77107) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=7646[0m
+[0;33mW (77107) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (77107) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (82187) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=8154[0m
+[0;33mW (82187) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (82187) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (87267) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=8662[0m
+[0;33mW (87267) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (87267) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (92347) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=9170[0m
+[0;33mW (92347) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (92347) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (97427) TX: 23 bytes enviados via LoRa: Hello Miguel! Tick=9678[0m
+[0;33mW (97427) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (97427) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (102507) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=10186[0m
+[0;33mW (102507) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (102507) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (107587) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=10694[0m
+[0;33mW (107587) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (107587) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (112667) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=11202[0m
+[0;33mW (112667) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (112667) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (117747) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=11710[0m
+[0;33mW (117747) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (117747) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (122827) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=12218[0m
+[0;33mW (122827) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (122827) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (127907) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=12726[0m
+[0;33mW (127907) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (127907) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (132987) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=13234[0m
+[0;33mW (132987) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (132987) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (138067) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=13742[0m
+[0;33mW (138067) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (138067) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (143147) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=14250[0m
+[0;33mW (143147) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (143147) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (148227) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=14758[0m
+[0;33mW (148227) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (148227) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (153307) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=15266[0m
+[0;33mW (153307) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (153307) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (158387) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=15774[0m
+[0;33mW (158387) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (158387) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (163467) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=16282[0m
+[0;33mW (163467) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (163467) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (168547) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=16790[0m
+[0;33mW (168547) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (168547) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (173627) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=17298[0m
+[0;33mW (173627) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (173627) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (178707) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=17806[0m
+[0;33mW (178707) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (178707) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (183787) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=18314[0m
+[0;33mW (183787) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (183787) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (188867) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=18822[0m
+[0;33mW (188867) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (188867) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (193947) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=19330[0m
+[0;33mW (193947) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (193947) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (199027) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=19838[0m
+[0;33mW (199027) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (199027) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (204107) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=20346[0m
+[0;33mW (204107) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (204107) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (209187) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=20854[0m
+[0;33mW (209187) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (209187) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (214267) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=21362[0m
+[0;33mW (214267) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (214267) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (219347) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=21870[0m
+[0;33mW (219347) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (219347) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (224427) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=22378[0m
+[0;33mW (224427) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (224427) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (229507) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=22886[0m
+[0;33mW (229507) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (229507) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (234587) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=23394[0m
+[0;33mW (234587) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (234587) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (239667) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=23902[0m
+[0;33mW (239667) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (239667) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (244747) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=24410[0m
+[0;33mW (244747) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (244747) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (249827) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=24918[0m
+[0;33mW (249827) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (249827) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (254907) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=25426[0m
+[0;33mW (254907) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (254907) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (259987) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=25934[0m
+[0;33mW (259987) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (259987) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (265067) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=26442[0m
+[0;33mW (265067) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (265067) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (270147) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=26950[0m
+[0;33mW (270147) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (270147) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (275227) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=27458[0m
+[0;33mW (275227) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (275227) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (280307) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=27966[0m
+[0;33mW (280307) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (280307) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (285387) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=28474[0m
+[0;33mW (285387) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (285387) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (290467) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=28982[0m
+[0;33mW (290467) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (290467) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (295547) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=29490[0m
+[0;33mW (295547) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (295547) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (300627) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=29998[0m
+[0;33mW (300627) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (300627) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (305707) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=30506[0m
+[0;33mW (305707) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (305707) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (310787) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=31014[0m
+[0;33mW (310787) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (310787) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (315867) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=31522[0m
+[0;33mW (315867) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (315867) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (320947) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=32030[0m
+[0;33mW (320947) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (320947) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (326027) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=32538[0m
+[0;33mW (326027) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (326027) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (331107) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=33046[0m
+[0;33mW (331107) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (331107) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (336187) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=33554[0m
+[0;33mW (336187) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (336187) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (341267) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=34062[0m
+[0;33mW (341267) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (341267) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m
+[0;32mI (346347) TX: 24 bytes enviados via LoRa: Hello Miguel! Tick=34570[0m
+[0;33mW (346347) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (346347) LORA_THINGSPEAK: Wi-Fi não conectado, ignorando envio[0m

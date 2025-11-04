@@ -1,0 +1,5 @@
+[1/4] cmd.exe /C "cd /D C:\Users\Migue\lora_tx\esp-idf-sx127x\basic\build\esp-idf\esptool_py && C:\Users\Migue\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/Migue/esp/v5.3.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Migue/lora_tx/esp-idf-sx127x/basic/build/partition_table/partition-table.bin C:/Users/Migue/lora_tx/esp-idf-sx127x/basic/build/lora.bin"
+lora.bin binary size 0xe6000 bytes. Smallest app partition is 0x100000 bytes. 0x1a000 bytes (10%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\Migue\lora_tx\esp-idf-sx127x\basic\build\bootloader\esp-idf\esptool_py && C:\Users\Migue\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/Migue/esp/v5.3.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/Migue/lora_tx/esp-idf-sx127x/basic/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.

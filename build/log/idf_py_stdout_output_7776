@@ -1,0 +1,256 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 27 2025 15:09:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b494h ( 46228) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b4bc vaddr=3ffb0000 size=02478h (  9336) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d93c vaddr=40080000 size=026dch (  9948) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16f58h ( 94040) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00036f80 vaddr=400826dc size=0bd14h ( 48404) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (213) app_init: Application information:[0m
+[0;32mI (216) app_init: Project name:     lora[0m
+[0;32mI (221) app_init: App version:      eb3e4bf[0m
+[0;32mI (226) app_init: Compile time:     Oct 27 2025 16:23:27[0m
+[0;32mI (232) app_init: ELF file SHA256:  d33e0c152...[0m
+[0;32mI (237) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (242) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (247) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (252) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (257) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (264) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFB2D88 len 0002D278 (180 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (282) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 4008E3F0 len 00011C10 (71 KiB): IRAM[0m
+[0;32mI (296) spi_flash: detected chip: generic[0m
+[0;32mI (299) spi_flash: flash io: dio[0m
+[0;33mW (303) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (317) main_task: Started on CPU0[0m
+[0;32mI (327) main_task: Calling app_main()[0m
+[0;32mI (327) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) main: Frequency is 915MHz[0m
+[0;32mI (347) main: coding_rate=1[0m
+[0;32mI (347) main: bandwidth=7[0m
+[0;32mI (347) main: spreading_factor=7[0m
+[0;32mI (357) RX: Start[0m
+[0;32mI (357) main_task: Returned from app_main()[0m
+[0;32mI (1062597) RX: 10 byte packet received:[109.98 ppm][0m
+[0;32mI (1065657) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1068717) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1071777) RX: 9 byte packet received:[58.49 ppm][0m
+����������������������������������������������������������������[0;32mI (1074837) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1077897) RX: 9 byte packet received:[58.49 ppm][0m
+����������������������������������������������������������������0;32mI (1080957) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1084017) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1087077) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1090137) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1093197) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1096257) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1099317) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1102377) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1105437) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1108497) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1111557) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1114617) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1117677) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1120737) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1123797) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1126857) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1129917) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1132977) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1136037) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1139097) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1142157) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1145217) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1148277) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1151337) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1154397) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1157467) RX: 9 byte packet received:[59.28 ppm][0m
+����������������������������������������������������������������[0;32mI (1160527) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1163587) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1166647) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1169707) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1172767) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1175827) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1178887) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1181947) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1185007) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1188067) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1191127) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1194187) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1197247) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1200307) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1203367) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1206427) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1209487) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1212547) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1215607) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1218667) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1221727) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1224787) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1227847) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1230907) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1233967) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1237027) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1240087) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1243147) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1246207) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1249267) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1252327) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1255387) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1258447) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1261507) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1264567) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1267627) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1270687) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1273747) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1276807) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1279867) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1282927) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1285987) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1289047) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1292107) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1295167) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1298227) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1301287) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1304347) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1307407) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1310467) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1313527) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1316587) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1319647) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1322707) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1325767) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1328827) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1331887) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1334947) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1338007) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1341067) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1344127) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1347187) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1350247) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1353307) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1356367) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1359427) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1362487) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1365547) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1368607) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1371667) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1374727) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1377787) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1380847) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1383907) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1386967) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1390027) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1393087) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1396147) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1399207) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1402267) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1405327) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1408387) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1411447) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1414507) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1417567) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1420627) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1423687) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1426747) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1429807) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1432867) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1435927) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1438987) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1442047) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1445107) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1448167) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1451227) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1454287) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1457347) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1460407) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1463467) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1466537) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1469597) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1472657) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1475717) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1478777) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1481837) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1484897) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1487957) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1491017) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1494077) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1497137) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1500197) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1503257) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1506317) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1509377) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1512437) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1515497) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1518557) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1521617) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1524677) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1527737) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1530797) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1533857) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1536917) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1539977) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1543037) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1546097) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1549157) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1552217) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1555277) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1558337) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1561397) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1564457) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1567517) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1570577) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1573637) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1576697) RX: 9 byte packet received:[59.28 ppm][0m
+[0;32mI (1579757) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1582817) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1585877) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1588937) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1591997) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1595057) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1598117) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1601177) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1604237) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1607297) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1610357) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1613417) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1616477) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1619537) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1622597) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1625657) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1628717) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1631777) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1634837) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1637897) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1640957) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (1644017) RX: 9 byte packet received:[58.49 ppm][0m
+[0;32mI (164707

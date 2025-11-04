@@ -1,0 +1,155 @@
+��ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 27 2025 15:09:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b734h ( 46900) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b75c vaddr=3ffb0000 size=02478h (  9336) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001dbdc vaddr=40080000 size=0243ch (  9276) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1a374h (107380) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=0003a39c vaddr=4008243c size=0bfb4h ( 49076) load[0m
+[0;32mI (198) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (198) boot: Disabling RNG early entropy source...[0m
+[0;32mI (210) cpu_start: Multicore app[0m
+[0;32mI (218) cpu_start: Pro cpu start user code[0m
+[0;32mI (218) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (219) app_init: Application information:[0m
+[0;32mI (221) app_init: Project name:     lora[0m
+[0;32mI (226) app_init: App version:      eb3e4bf[0m
+[0;32mI (231) app_init: Compile time:     Oct 27 2025 15:08:57[0m
+[0;32mI (237) app_init: ELF file SHA256:  e828cac25...[0m
+[0;32mI (242) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (247) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (252) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (257) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (262) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (269) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (275) heap_init: At 3FFB2D88 len 0002D278 (180 KiB): DRAM[0m
+[0;32mI (281) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (294) heap_init: At 4008E3F0 len 00011C10 (71 KiB): IRAM[0m
+[0;32mI (301) spi_flash: detected chip: generic[0m
+[0;32mI (305) spi_flash: flash io: dio[0m
+[0;33mW (309) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (322) main_task: Started on CPU0[0m
+[0;32mI (332) main_task: Calling app_main()[0m
+[0;32mI (332) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (332) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (352) main: Frequency is 915MHz[0m
+[0;32mI (352) main: coding_rate=1[0m
+[0;32mI (352) main: bandwidth=7[0m
+[0;32mI (352) main: spreading_factor=7[0m
+[0;32mI (362) TX: Start[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (422) TX: 15 byte packet sent...[0m
+[0;32mI (1482) TX: 17 byte packet sent...[0m
+[0;32mI (2542) TX: 17 byte packet sent...[0m
+[0;32mI (3602) TX: 17 byte packet sent...[0m
+[0;32mI (4662) TX: 17 byte packet sent...[0m
+[0;32mI (5722) TX: 17 byte packet sent...[0m
+[0;32mI (6782) TX: 17 byte packet sent...[0m
+[0;32mI (7842) TX: 17 byte packet sent...[0m
+[0;32mI (8902) TX: 17 byte packet sent...[0m
+[0;32mI (9962) TX: 17 byte packet sent...[0m
+[0;32mI (11022) TX: 18 byte packet sent...[0m
+[0;32mI (12082) TX: 18 byte packet sent...[0m
+[0;32mI (13142) TX: 18 byte packet sent...[0m
+[0;32mI (14202) TX: 18 byte packet sent...[0m
+[0;32mI (15262) TX: 18 byte packet sent...[0m
+[0;32mI (16322) TX: 18 byte packet sent...[0m
+[0;32mI (17382) TX: 18 byte packet sent...[0m
+[0;32mI (18442) TX: 18 byte packet sent...[0m
+[0;32mI (19502) TX: 18 byte packet sent...[0m
+[0;32mI (20562) TX: 18 byte packet sent...[0m
+[0;32mI (21622) TX: 18 byte packet sent...[0m
+[0;32mI (22682) TX: 18 byte packet sent...[0m
+[0;32mI (23742) TX: 18 byte packet sent...[0m
+[0;32mI (24802) TX: 18 byte packet sent...[0m
+[0;32mI (25862) TX: 18 byte packet sent...[0m
+[0;32mI (26922) TX: 18 byte packet sent...[0m
+[0;32mI (27982) TX: 18 byte packet sent...[0m
+[0;32mI (29042) TX: 18 byte packet sent...[0m
+[0;32mI (30102) TX: 18 byte packet sent...[0m
+[0;32mI (31162) TX: 18 byte packet sent...[0m
+[0;32mI (32222) TX: 18 byte packet sent...[0m
+[0;32mI (33282) TX: 18 byte packet sent...[0m
+[0;32mI (34342) TX: 18 byte packet sent...[0m
+[0;32mI (35402) TX: 18 byte packet sent...[0m
+[0;32mI (36462) TX: 18 byte packet sent...[0m
+[0;32mI (37522) TX: 18 byte packet sent...[0m
+[0;32mI (38582) TX: 18 byte packet sent...[0m
+[0;32mI (39642) TX: 18 byte packet sent...[0m
+[0;32mI (40702) TX: 18 byte packet sent...[0m
+[0;32mI (41762) TX: 18 byte packet sent...[0m
+[0;32mI (42822) TX: 18 byte packet sent...[0m
+[0;32mI (43882) TX: 18 byte packet sent...[0m
+[0;32mI (44942) TX: 18 byte packet sent...[0m
+[0;32mI (46002) TX: 18 byte packet sent...[0m
+[0;32mI (47062) TX: 18 byte packet sent...[0m
+[0;32mI (48122) TX: 18 byte packet sent...[0m
+[0;32mI (49182) TX: 18 byte packet sent...[0m
+[0;32mI (50242) TX: 18 byte packet sent...[0m
+[0;32mI (51302) TX: 18 byte packet sent...[0m
+[0;32mI (52362) TX: 18 byte packet sent...[0m
+[0;32mI (53422) TX: 18 byte packet sent...[0m
+[0;32mI (54482) TX: 18 byte packet sent...[0m
+[0;32mI (55542) TX: 18 byte packet sent...[0m
+[0;32mI (56602) TX: 18 byte packet sent...[0m
+[0;32mI (57662) TX: 18 byte packet sent...[0m
+[0;32mI (58722) TX: 18 byte packet sent...[0m
+[0;32mI (59782) TX: 18 byte packet sent...[0m
+[0;32mI (60842) TX: 18 byte packet sent...[0m
+[0;32mI (61902) TX: 18 byte packet sent...[0m
+[0;32mI (62962) TX: 18 byte packet sent...[0m
+[0;32mI (64022) TX: 18 byte packet sent...[0m
+[0;32mI (65082) TX: 18 byte packet sent...[0m
+[0;32mI (66142) TX: 18 byte packet sent...[0m
+[0;32mI (67202) TX: 18 byte packet sent...[0m
+[0;32mI (68262) TX: 18 byte packet sent...[0m
+[0;32mI (69322) TX: 18 byte packet sent...[0m
+[0;32mI (70382) TX: 18 byte packet sent...[0m
+[0;32mI (71442) TX: 18 byte packet sent...[0m
+[0;32mI (72502) TX: 18 byte packet sent...[0m
+[0;32mI (73562) TX: 18 byte packet sent...[0m
+[0;32mI (74622) TX: 18 byte packet sent...[0m
+[0;32mI (75682) TX: 18 byte packet sent...[0m
+[0;32mI (76742) TX: 18 byte packet sent...[0m
+[0;32mI (77802) TX: 18 byte packet sent...[0m
+[0;32mI (78862) TX: 18 byte packet sent...[0m
+[0;32mI (79922) TX: 18 byte packet sent...[0m
+[0;32mI (80982) TX: 18 byte packet sent...[0m
+[0;32mI (82042) TX: 18 byte packet sent...[0m
+[0;32mI (83102) TX: 18 byte packet sent...[0m
+[0;32mI (84162) TX: 18 byte packet sent...[0m
+[0;32mI (85222) TX: 18 byte packet sent...[0m
+[0;32mI (86282) TX: 18 byte packet sent...[0m
+[0;32mI (87342) TX: 18 byte packet sent...[0m
+[0;32mI (88402) TX: 18 byte packet sent...[0m
+[0;32mI (89462) TX: 18 byte packet sent...[0m
+[0;32mI (90522) TX: 18 byte packet sent...[0m
+[0;32mI (91582) TX: 18 byte packet sent...[0m
+[0;32mI (92642) TX: 18 byte packet sent...[0m
+[0;32mI (93702) TX: 18 byte packet sent...[0m
+[0;32mI (94762) TX: 18 byte packet sent...[0m
+[0;32mI (95822) TX: 18 by
